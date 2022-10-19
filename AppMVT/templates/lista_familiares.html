@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de familiares</title>
+</head>
+<body>
+    <br>
+    <ul><h1 style="color: green;">Familiares agregados</h1>
+        <br>
+    
+        {% for familiar in lista_familiares %}
+            <h3><li>{{familiar.nombre}} {{familiar.apellido}} - {{familiar.edad}} años - Nacido/a en {{familiar.fecha_de_nacimiento}}</li></h3>
+        {% endfor %}
+    </ul>
+</body>
+</html>
